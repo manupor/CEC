@@ -1,703 +1,140 @@
-/* ======================================================
-   TABLE OF CONTENTS
-======================================================
-1.  Font Face Declarations
-2.  Root Variables
-3.  General Style
-    3.1 Headings
-    3.2 Paragraphs
-    3.3 Links
-    3.4 Buttons
-    3.5 Image
-    3.6 Lists
-4.  Utility Classes
-    4.1 Color Utilities
-    4.2 Background Utilities
-    4.3 Sizing Utilities
-    4.4 Other Utilities
-5.  Navbar Styles
-    5.1 Offcanvas
-    5.1.1 Offcanvas Social Icon
-    5.2 Dropdown
-6.  Hero Styles
-7.  About Styles
-8.  Service Styles
-9.  How It Works Styles
-10. Why Choose Us Styles
-11. Testimonials Styles
-12. FAQs Styles
-13. Banner Styles
-14. Blog Post Styles
-15. Core Values Styles
-16. Team Styles
-17. Contact Styles
-18. Maps Styles
+Skip to content
+
+Manu Portuguez's projects
+
+Manu Portuguez's projects
+Pro
+
+cec
+
+    2EBKXYwsq
+
+style.css
+
 19. Services Detail Styles
+
 20. Appointment Styles
+
 21. Pricing Styles
+
 22. 404 Styles
+
 23. Single Post
+
 24. Footer Styles
+
 25. Animation
+
 26. Media Queries
+
 ====================================================== */
 
+
 /* ======================================================
+
    1. FONT FACE DECLARATIONS
+
    Define custom fonts used throughout the template.
+
 ====================================================== */
+
 @font-face {
+
     font-family: 'space-grotesk';
-    src: url(../font/space-grotesk.ttf) format('truetype');
+
+    src: url(space-grotesk.ttf) format('truetype');
+
     font-weight: normal;
+
     font-style: normal;
+
 }
+
 
 
 
 /* ======================================================
+
    2. ROOT VARIABLES
+
    Global variables for colors, fonts, and reusable values.
+
 ====================================================== */
+
 :root {
+
     --text-color-1: #b6b6b6;
+
     --text-color-2: #2a2a2a;
+
     --color-main: #ea5c2a;
+
     --color-darker: #b54853;
+
     --color-primary: #f4f4f4;
+
     --color-bg-1: #121212;
+
     --color-bg-2: #1b1b1b;
+
     --color-border: #f4f4f436;
+
     --font-1: "space-grotesk";
+
 }
+
 
 html,
+
 body {
+
     font-size: 16px;
+
     width: 100%;
+
     overflow-x: hidden;
+
     margin: 0;
+
     padding: 0;
+
 }
 
+
 /* ======================================================
+
    3. GENERAL STYLE
+
    Base styles for HTML elements.
+
 ====================================================== */
 
+
 /* ------------------------------------------------------
+
    3.1 HEADINGS
+
    Typography for all heading levels.
+
 ------------------------------------------------------ */
+
 h1,
+
 h2,
+
 h3,
+
 h4,
+
 h5,
+
 h6 {
+
     font-family: var(--font-1);
+
     font-weight: 700;
+
     line-height: 1em;
+
     color: var(--color-primary);
-}
 
-h1 {
-    font-size: 90px;
-}
-
-h2 {
-    font-size: 65px;
-}
-
-h3 {
-    font-size: 50px;
-}
-
-h4 {
-    font-size: 30px;
-}
-
-h5 {
-    font-size: 20px;
-}
-
-h6 {
-    font-size: 16px;
-}
-
-/* ------------------------------------------------------
-   3.2 PARAGRAPHS
-   Styles for paragraph text.
------------------------------------------------------- */
-p {
-    font-size: 16px;
-    color: var(--text-color-1);
-    font-weight: 400;
-    font-family: var(--font-1);
-    line-height: 1.8em;
-}
-
-.subtitle {
-    font-size: 16px;
-    font-weight: 500;
-    word-spacing: 6px;
-    letter-spacing: 1.2px;
-    color: var(--text-color-1);
-}
-
-span {
-    font-weight: 400;
-    color: var(--text-color-1);
-    font-family: var(--font-1);
-}
-
-/* ------------------------------------------------------
-   3.3 LINKS
-   Anchor tag styles.
------------------------------------------------------- */
-a {
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-size: 16px;
-    color: var(--color-primary);
-    font-family: var(--font-1);
-}
-
-/* ------------------------------------------------------
-   3.4 BUTTONS
-   Button base styles.
------------------------------------------------------- */
-button {
-    font-family: var(--font-1);
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.btn-1 {
-    padding: 12px 20px;
-    color: var(--color-primary);
-    background-color: var(--text-color-2);
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.btn-1:hover {
-    background-color: var(--color-main);
-}
-
-.btn-2 {
-    padding: 12px 20px;
-    color: white;
-    background-color: var(--color-main);
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    min-width: max-content;
-    max-width: 100%;
-}
-
-.btn-2:hover {
-    background-color: var(--color-primary);
-    color: var(--color-bg-2);
-}
-
-.btn-3 {
-    color: white;
-    background-color: transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.btn-3:hover {
-    color: var(--color-main);
-}
-
-.btn-4 {
-    padding: 12px 20px;
-    color: white;
-    background-color: var(--color-bg-1);
-    transition: all 0.3s ease;
-    min-width: max-content;
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.btn-4:hover {
-    background-color: var(--color-primary);
-    color: var(--color-bg-1);
-}
-
-.btn-5 {
-    padding: 12px 20px;
-    color: var(--color-bg-1);
-    background-color: var(--color-primary);
-    transition: all 0.3s ease;
-    min-width: max-content;
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.btn-5:hover {
-    background-color: var(--color-bg-1);
-    color: var(--color-primary);
-}
-
-.btn-circle-1 {
-    width: 52px;
-    height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: var(--color-primary);
-    color: var(--text-color-2);
-    transition: all 0.3s ease;
-}
-
-.btn-circle-1 i {
-    transition: transform 0.3s ease;
-}
-
-.btn-circle-1:hover {
-    background-color: var(--color-main);
-    color: white;
-}
-
-.btn-circle-1:hover i {
-    transform: rotate(-45deg);
-}
-
-.btn-circle-2 {
-    width: 52px;
-    height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: var(--color-main);
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.btn-circle-2 i {
-    transition: transform 0.3s ease;
-}
-
-.btn-circle-2:hover {
-    background-color: wheat;
-    color: black;
-}
-
-.btn-circle-2:hover i {
-    transform: rotate(-45deg);
-}
-
-.btn-fit {
-    width: fit-content;
-}
-
-
-/* ------------------------------------------------------
-   3.5 IMAGE
-   Image element styles.
------------------------------------------------------- */
-img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-
-/* ------------------------------------------------------
-   3.6 LISTS
-   List element styles.
------------------------------------------------------- */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    font-family: var(--font-1) !important;
-    font-weight: 400;
-    color: var(--text-color-1);
-}
-
-/* 4.1 Color Utilities */
-.c-text-1 {
-    color: var(--text-color-1) !important;
-}
-
-.c-text-2 {
-    color: var(--text-color-2) !important;
-}
-
-.c-main {
-    color: var(--color-main);
-}
-
-.c-darker {
-    color: var(--color-darker);
-}
-
-.c-primary {
-    color: var(--color-primary);
-}
-
-.c-bg-1 {
-    color: var(--color-bg-1);
-}
-
-.c-bg-2 {
-    color: var(--color-bg-2);
-}
-
-.c-border {
-    color: var(--color-border);
-}
-
-.c-white {
-    color: white !important;
-}
-
-.c-black {
-    color: black;
-}
-
-/* 4.2 Background Utilities */
-.bg-text-1 {
-    background-color: var(--text-color-1);
-}
-
-.bg-text-2 {
-    background-color: var(--text-color-2);
-}
-
-.bg-main {
-    background-color: var(--color-main);
-}
-
-.bg-darker {
-    background-color: var(--color-darker);
-}
-
-.bg-prime {
-    background-color: var(--color-primary);
-}
-
-.bg-bg-1 {
-    background-color: var(--color-bg-1);
-}
-
-.bg-bg-2 {
-    background-color: var(--color-bg-2);
-}
-
-.bg-border {
-    background-color: var(--color-border);
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.bg-black {
-    background-color: black;
-}
-
-
-/* 4.3 Sizing Utilities */
-.navbar-size {
-    width: 1300px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.page-size {
-    width: 1300px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* 4.4 Other Utilities */
-.divider {
-    border: 1px solid var(--color-border);
-}
-
-
-/* ======================================================
-   5. NAVBAR STYLES
-   Styles for navigation bar and navigation elements.
-====================================================== */
-.nav-logo {
-    width: 50%;
-    max-height: 70px;
-}
-
-.nav-link {
-    color: var(--text-color-1);
-    font-size: 15px;
-    font-family: var(--font-1);
-    font-weight: 600;
-    box-shadow: none;
-}
-
-.nav-link {
-    color: #F7F0EBA8 !important;
-    font-size: 15px;
-    font-family: var(--font-1);
-    font-weight: 500;
-}
-
-.nav-item:hover .nav-link {
-    color: white !important;
-}
-
-.nav-link.active {
-    color: var(--color-main) !important;
-    background-color: transparent !important;
-    box-shadow: none;
-}
-
-/* ------------------------------------------------------
-   5.1 OFFCANVAS
-   Styles for offcanvas navigation menu.
------------------------------------------------------- */
-.offcanvas-header .btn-close-custom {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-    background-color: transparent;
-    border: 1px solid var(--text-color-2);
-    border-radius: 10px;
-    font-size: 16px;
-    padding: 5px 12px;
-    cursor: pointer;
-}
-
-.btn-close {
-    color: var(--color-main) !important;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a0893f'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
-    opacity: 1 !important;
-}
-
-.btn-close:hover {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23a0893f'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
-
-}
-
-.offcanvas-icon {
-    background-color: var(--color-main);
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.offcanvas {
-    background-color: var(--text-color-2) !important;
-}
-
-/* ------------------------------------------------------
-   5.2 DROPDOWN
-   Dropdown menu styles in navbar.
------------------------------------------------------- */
-.nav-item.dropdown .nav-link:hover {
-    color: #F7F0EBA8;
-    box-shadow: none;
-}
-
-.nav-item.dropdown .nav-link:active {
-    box-shadow: none;
-}
-
-
-
-.nav-link:focus,
-.dropdown-item:focus {
-    color: var(--color-main);
-    outline: none;
-    box-shadow: none !important;
-}
-
-.dropdown-icon-size {
-    font-size: 10px;
-}
-
-.dropdown-menu {
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    background-color: var(--text-color-2);
-    min-width: 200px;
-    border: none;
-    box-shadow: none;
-    border-radius: 5px;
-}
-
-.dropdown-menu a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown-item {
-    font-size: 15px;
-    color: var(--text-color-1) !important;
-    font-weight: 500 !important;
-    border-radius: 5px;
-}
-
-.dropdown-item.active {
-    background-color: transparent !important;
-    color: var(--color-main) !important;
-}
-
-.dropdown-item:hover {
-    background-color: transparent !important;
-    color: white !important;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-.dropdown-icon {
-    font-size: 12px;
-    color: var(--color-main);
-}
-
-.nav-link:hover .dropdown-icon {
-    color: white;
-}
-
-/* ======================================================
-   26. MEDIA QUERIES
-   Responsive styles for different screen sizes.
-====================================================== */
-@media screen and (max-width: 992px) {
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        line-height: 1.1em;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 38px;
-    }
-
-    h3 {
-        font-size: 27px;
-    }
-
-    h4 {
-        font-size: 21px;
-    }
-
-    h5 {
-        font-size: 19px;
-    }
-
-    h6 {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    button {
-        font-size: 12px;
-    }
-
-    a {
-        font-size: 12px;
-    }
-
-    .page-size {
-        width: 100%;
-        padding: 50px 32px;
-    }
-
-    .navbar-size {
-        width: 100%;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-
-    .nav-link {
-        font-size: 15px;
-    }
-
-    .dropdown-menu {
-        border: none;
-        background-color: var(--color-darker);
-    }
-
-    .dropdown-item {
-        font-size: 14px;
-        color: var(--color-main) !important;
-    }
-
-    .dropdown-item:hover {
-        color: white !important;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 42px;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    h5 {
-        font-size: 18px;
-    }
-
-    h6 {
-        font-size: 14px;
-    }
-
-    .page-size {
-        padding: 50px 20px;
-    }
-
-    .navbar-size {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .nav-logo {
-        width: 100%;
-        max-height: 30px;
-    }
-
-}
