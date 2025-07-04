@@ -48,7 +48,7 @@
 ====================================================== */
 @font-face {
     font-family: 'space-grotesk';
-    src: url(../font/space-grotesk.ttf) format('truetype');
+    src: url(space-grotesk.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -419,6 +419,13 @@ ul li {
     padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Hero background image */
+.hero-banner {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUXFRUVFRUVFRUVFRUVFRcWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAAAf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8Af//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z');
+    background-size: cover;
+    background-position: center;
 }
 
 /* 4.4 Other Utilities */
